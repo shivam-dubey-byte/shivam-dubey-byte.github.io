@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Projects Section-->
+<section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8 ">
+                <!-- Blog Card 1-->
+                {% for i in post %}
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="d-flex align-items-center ">
+                            <div class="p-5 col">
+                                <h4 class="fw-bolder">{{i.TITLE}}</h4>
+                                <p>{{i.CONTENT[0:80]}}...</p>
+                                <a class="btn  px-4 py-3" href="/blog/{{i.SNO}}">
+
+                                    <button type="button" class="btn btn-primary">Read Now</button>
+
+                                </a>
+                            </div>
+
+                            <img class="img-fluid " src="static/{{i.IMAGE}}" alt="..." />
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                {% endfor %}
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+</section>
+<!-- Page Content-->
+<div class="container px-5 my-5">
+
+    <div class="row gx-5 justify-content-center">
+        <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <!-- Experience Section-->
+            <section>
+                <!--Blog Card 1-->
+
+
+              </section>
+
+              <div class="card-body p-3 col shadow border-0 rounded-4 mb-5 text-right">
+
+                        <div class="d-flex h-100">
+                            <div class="align-self-start mr-auto">
+                              {% if prev=='#' %}
+                              {% set prev_hide = 'invisible' %}
+                              {% endif %}
+                              {% if next=='#' %}
+                              {% set next_hide = 'invisible' %}
+                              {% endif %}
+
+                              <a href="{{prev}}">
+                                <button type="button" class="btn btn-warning h1 {{prev_hide}}"> <span class="h4">     <  < Previous  </span> </button>
+                                </a>
+                            </div>
+                            <div class="align-self-center mx-auto">
+
+                                <button type="button" class="btn ">
+                                </button>
+                            </div>
+                            <div class="align-self-end ml-auto">
+
+                              <a href="{{next}}">
+                                <button type="button" class="btn btn-warning h1 {{next_hide}}"> <span class="h4">  Next >  >   </span> </button>
+                                </a>
+
+                            </div>
+                        </div>
+              </div>
+
+                </div>
+
+              </div>
+
+              <!---->
+<!-- Call to action section-->
+<section class="py-5 bg-gradient-primary-to-secondary text-white">
+    <div class="container px-5 my-5">
+        <div class="text-center">
+            <h2 class="display-4 fw-bolder mb-4"> Wanaa Ask ?? Need Support ??</h2>
+            <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="/QA">Ask me</a>
+        </div>
+    </div>
+</section>
+</main>
+  {% endblock %}

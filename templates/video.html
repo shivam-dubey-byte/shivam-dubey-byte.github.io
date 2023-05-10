@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">VIDEO </span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8 ">
+                <!-- Blog Card 1-->
+                <div class="card overflow-hidden shadow rounded-4 ">
+
+
+                      <iframe width="800vw" height="450vh" src="https://www.youtube.com/embed/{{slug}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+</section>
+
+  {% endblock %}

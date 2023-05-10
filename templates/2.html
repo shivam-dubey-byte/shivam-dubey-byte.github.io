@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- Page content-->
+<div class="container px-5 mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">How does lack of physical activity affect mental health?</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on May 8, 2023 by EMHA</div>
+                    <!-- Post categories-->
+                    <!--
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>
+                    -->
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4"><img class="img-fluid rounded" src="{{url_for('static', filename='2.jpg')}}" alt="..." /></figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                    <p class="fs-5 mb-4">There is strong evidence for an association between weight gain and clinically diagnosed depression/anxiety. A meta-analysis of 15 prospective studies observed significant associations between clinically diagnosed depression and the onset of obesity but not between subclinical depression and overweight. Some evidence indicates an association between obesity and mental health symptoms in women: cross-sectional positive associations between obesity and subclinical depression symptoms were observed in American women. Similarly, a study of Canadian women found those with a history of depression or anxiety symptoms were more likely to gain weight during early adulthood.</p>
+                    <p class="fs-5 mb-4">Recent studies have examined physical activity and its influence on mental health symptomatology. Findings suggest that individuals who engage in regular physical activity have fewer depressive and anxiety symptoms than individuals who do not engage in regular physical activity. Randomised controlled trials indicate that regular aerobic exercise reduces depressive symptoms among adults with clinically diagnosed depression. However, less is known about the influence of physical activity on subclinical symptoms of depression and anxiety. In one longitudinal study, both men and women showed associations between self-reported physical activity and depressive symptoms in a study of 5,497 Northern Finland young adults. One study found that adults with excess weight had a 55% higher risk of developing depression over their lifetime compared to people that did not struggle with obesity.</p>
+                    <h3 class="fw-bolder mb-4 mt-5">How Obesity Causes Mental Health Problems</h3>
+                    <p class="fs-5 mb-4">There are a variety of practical and societal factors that can lead to mental health issues for patients living with obesity. These include:</p>
+                    <p class="fs-5 mb-4"> <span class="fw-bolder mb-4 mt-5">Quality of life:</span>  Men and women who carry significant extra weight often face problems related to physical and occupational functioning, both due to their size and chronic ailments. Being physically unable to do the things they love—such as attend fun events, travel, or visit with friends and family—can lead to social isolation, loneliness, and more difficulty coping with life’s hardships. Chronic pain on its own has been linked to depression.3</p>
+                    <p class="fs-5 mb-4"><span class="fw-bolder mb-4 mt-5">Weight bias and discrimination: </span>One of the biggest challenges for those struggling with weight issues is society’s negative perspectives on obesity. Weight bias refers to the stereotypes and attitudes that define people with obesity as unattractive, lazy, and undisciplined. These unfavourable misperceptions can be widespread within families, among peers, in the workplace, and in medical settings by healthcare providers. They can lead to discriminatory behaviour that affects a person’s self-esteem, employment opportunities, and even the quality of healthcare they receive. </p>
+                    <p class="fs-5 mb-4"><span class="fw-bolder mb-4 mt-5"> Poor body image: </span> Weight bias and poor body image tend to go together. Patients may internalise society’s stigma against obesity, which causes them to feel embarrassed about their weight and dissatisfied with their appearance. People who struggle with excess weight may also experience anxiety over being judged for how they look.  </p>
+                    <p class="fs-5 mb-4"><span class="fw-bolder mb-4 mt-5"> Physiological issues:  </span> There are also obesity-related health factors that can negatively influence mental health. Research suggests that excess body fat and poor eating habits increase inflammatory markers. This heightened inflammation can lead to a higher risk of developing depression and plays a role in immune system health. </p>
+                    <h3 class="fw-bolder mb-4 mt-5">Can Mental Health Problems Cause Obesity, too?</h3>
+                    <p class="fs-5 mb-4">Depression can cause a loss of appetite, which may lead to weight loss. However, depression may instead cause an increase in appetite and therefore weight gain. Researchers now describe two types of depression:</p>
+                    <p class="fs-5 mb-4">
+                      <ul>
+                        <li><p class="fs-5 mb-4">	<span class="fw-bolder mb-4 mt-5">Type 1: Symp</span>toms of type 1 include a loss of appetite, weight loss, insomnia, and suicidal thoughts.</p></li>
+                        <li><p class="fs-5 mb-4">	<span class="fw-bolder mb-4 mt-5">Type 2: </span>Symptoms of type 2 include Increased appetite and weight gain, a feeling of heaviness in the limbs, excessive daytime sleepiness, and poor metabolic profile.</p></li>
+
+                      </ul>
+                    </p>
+
+                    <p class="fs-5 mb-4">The link between obesity and mental health issues is not a one-way street. While it’s clear that excess weight can take a toll on someone’s emotional wellbeing, it’s also true that mental health conditions may influence a person’s weight. Here are some examples of how:</p>
+                    <p class="fs-5 mb-4">
+                      <ul>
+                        <li>Chronic stress, anxiety, and depression—as well as mental health conditions like bipolar disorder—may cause someone to use food as a way to cope. They might also make poor dietary choices, which in turn can cause weight gain.</li>
+                        <li>The serotonin deficiency linked with depressed mood, interrupted sleep patterns and anxiety has been found to lead to carbohydrate cravings and weight gain. In other words, people who lack serotonin may self-medicate with food.</li>
+                        <li>Adults who are depressed may lack the energy or desire to exercise or take part in other activities. Leading a sedentary lifestyle can set the stage for weight problems.</li>
+                        <li>Antidepressants can also cause weight loss or weight gain. And other possible side effects of antidepressants, such as nausea and insomnia, may affect eating habits and weight.</li>
+                      </ul>
+                    </p>
+                    <h3 class="fw-bolder mb-4 mt-5">Can weight gain cause depression?</h3>
+                    <p class="fs-5 mb-4">Obesity can cause risk factors for depression, such as:</p>
+                    <p class="fs-5 mb-4">
+                      <ul>
+                        <li>reduced physical activity.</li>
+                        <li>changes in thought patterns, such as rumination</li>
+                        <li>changes in appetite</li>
+                        <li>changes to the hormone and cytokine systems</li>
+
+                      </ul>
+                    </p>
+
+
+
+                </section>
+
+            </article>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
