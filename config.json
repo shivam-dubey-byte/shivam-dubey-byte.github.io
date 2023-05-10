@@ -1,0 +1,11 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri":"mysql://root:@localhost/emha",
+    "prod_uri":"",
+    "title":"EMHA",
+    "no_of_posts":"2"
+
+  }
+}
